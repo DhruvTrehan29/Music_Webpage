@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Background</title>
+    <link rel="stylesheet" href="Music.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="logo.png" class="logo" alt="No Image Found">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Specifications</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="leftcol">
+                <h1>The<br>Real<br>Sound</h1>
+            </div>
+            <div class="rightcol">
+                 <p>Click here to listen</p>
+                 <img src="play.png" id="icon" alt="No image found">
+            </div>
+        </div>
+    </div>
+    <audio id="mySong1">
+        <source src="kabir singh piano.mp3" type="audio/mp3">
+    </audio>
+    <audio id="mySong2">
+        <source src="Maroon 5 - Memories-[AudioTrimmer.com].mp3" type="audio/mp3">
+    </audio>
+    <script>
+        var mySong1=document.getElementById("mySong1");
+        var icon=document.getElementById("icon");
+
+        icon.onclick=function(){
+            if(mySong1.paused){
+                mySong1.play();
+                icon.src="pause.png";
+            }
+
+            else{
+                mySong1.pause();
+                icon.src="play.png";
+            }
+        }
+        
+
+        var mySong2=document.getElementById("mySong2");
+        var icon=document.getElementById("icon");
+
+        icon.onclick=function(){
+            if(mySong2.paused){
+                mySong2.play();
+                icon.src="pause.png";
+            }
+
+            else{
+                mySong2.pause();
+                icon.src="play.png";
+            }
+        }
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

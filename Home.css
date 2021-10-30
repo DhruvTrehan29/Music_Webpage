@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+h1{
+    text-decoration: underline;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 45px;
+    font-size: 40px;
+    font-family: 'Balsamiq Sans', cursive;
+    margin-top: -12px;
+}
+.container{
+    display: inline;  
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Balsamiq Sans', cursive;
+    border: 60px solid brown;
+    position: absolute;
+    margin-left: 350px;
+    margin-top: -12px;
+}
+body{
+    background-image: url(rj.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
